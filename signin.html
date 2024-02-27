@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Signin Form</title>
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150vh;
+    background-color: #f4f4f4;
+    background-image: url('https://img.freepik.com/free-vector/gradient-abstract-colorful-background_361591-949.jpg?w=826&t=st=1708175761~exp=1708176361~hmac=7a646874ccde27676475fd2b554f975658e1e4c7e2352ce0e5ccb4c140128b69');
+    background-size: cover;
+    background-position: bottom center; /* Adjusted background position */
+}
+
+
+
+
+        .container {
+            background-color: rgba(255, 255, 255);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: slideUp 1s ease-in-out;
+            max-width: 400px; 
+            width: 90%; /* Added width for responsiveness */
+            text-align: center; /* Center the container */
+            margin-top: 300px;
+        }
+
+        @keyframes slideUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        form {
+            margin-bottom: 130px; /* Adjusted margin for spacing */
+        }
+
+        label {
+            display: block; /* Added for better spacing */
+            margin-bottom: 8px;
+            font-weight: bold; /* Added for emphasis */
+            color: #333; /* Changed color for better readability */
+        }
+
+        input {
+            padding: 8px;
+            margin-bottom: 16px;
+            width: 100%; /* Added for responsiveness */
+            box-sizing: border-box; /* Added to include padding in width */
+            border-radius: 4px;
+            border: 1px solid #ccc; /* Added border for better visibility */
+        }
+
+        button {
+            padding: 10px 20px; /* Adjusted padding for better appearance */
+            background: linear-gradient(45deg, blueviolet, rgb(0, 33, 167));
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: linear-gradient(45deg, rgb(0, 33, 167), blueviolet); /* Adjusted hover effect */
+        }
+
+        .sample-header-section {
+            padding: 10% 0; /* Adjusted padding for better positioning */
+        }
+
+        h2 {
+            font-weight: bold;
+            margin-bottom: 20px; /* Adjusted margin for spacing */
+            color: blueviolet; /* Changed color for emphasis */
+        }
+      
+        .sample-header {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            background-image: url("https://img.freepik.com/free-photo/photocomposition-horizontal-online-shopping-banner_23-2151201766.jpg?w=996&t=st=1708176052~exp=1708176652~hmac=43e339341e1d7081aa88214c7f1496d85f3693d0d27d7666a757bac2f0c25c80");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            animation: backgroundAnimation 20s linear infinite alternate;
+        }
+    </style>
+</head>
+<body>
+
+<div class="sample-header">
+    <div class="sample-header-section">
+    </div>
+</div>
+
+<div class="container">
+    <h2>Sign in</h2>
+    <form action="/signin" method="POST">
+        <label for="signin-username">Username:</label>
+        <input type="text" id="signin-username" name="username" required>
+
+        <label for="signin-password">Password:</label>
+        <input type="password" id="signin-password" name="password" required>
+
+        <button type="submit">Sign in</button>
+    </form>
+</div>
+
+</body>
+</html>

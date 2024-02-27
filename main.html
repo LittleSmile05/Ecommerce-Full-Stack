@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+  <title>ASHALI ONLINE STORE</title>
+  <style>
+       @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 70%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: black;
+  background-color: rgb(255, 255, 255);
+}
+
+img {
+  max-width: 100%;
+}
+
+.box {
+  max-width: 1824px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 1200px) {
+  .box {
+    padding: 0 48px;
+  }
+}
+
+
+
+/* HEADER */
+ .logob{
+ width: 100px;
+ height: 80px;
+ cursor: pointer;
+ }
+ 
+ nav{
+  width: 84%;
+  margin: auto;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ }
+
+ nav ul li{
+     display: inline-block;
+     list-style: none;
+     margin: 10px 20px;
+ }
+ nav ul li a{
+    color: black;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+ }
+ nav ul li a:hover{
+     text-decoration: none;
+     color: rgb(198,161,207);
+ }
+ 
+ nav ul li a:hover{
+     color: rgb(198,161,207);
+ } 
+
+ .d {
+  display: flex;
+  align-items: center;
+}
+
+
+ .align-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ @media only screen and (max-width: 768px) {
+  nav {
+    padding: 16px 0;
+  }
+
+
+  .icons{
+    display: none;
+  }
+
+ 
+  .logob{
+    width: 100px;
+    height: 80px;
+    cursor: pointer;
+    } 
+  }
+  
+  
+  
+
+/* Intro */
+.intro {
+  height: calc(100vh - 112px);
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  background-image: url('https://puls-img.chanel.com/c_limit,w_1920/q_auto:good,dpr_auto,f_auto/1684487934290-10190855962654homepagefashiononedesktopjpg_1620x2880.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll; 
+  background-size: 100% 100%;
+/*background-blend-mode: overlay;*/
+color: white;
+text-shadow: 2px 2px 5px rgb(43, 41, 47);
+}
+
+.intro-content {
+  height: 100%;
+}
+
+
+
+.dis {
+  display: inline-block;
+  font-size: 40px;
+  color: rgb(198,161,207);
+}
+
+.intro h1 {
+  margin-top: 50px;
+  line-height: 1.3;
+  font-weight: 600;
+  font-size: 50px;
+  text-align: center;
+}
+
+.intro h2 {
+  line-height: 1.3;
+  font-weight: 600;
+  font-size: 45px;
+  text-align: center;
+}
+
+
+.intro  h3 {
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 80px;
+  background-color: rgb(198,161,207);
+  padding: 20px 80px;
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.3);
+  margin-top: 75px;
+  margin-left: 600px;
+}
+
+
+
+
+/* Section */
+.section {
+  padding: 160px 0 0 0;
+}
+
+/* Benefits */
+.benefit-center {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 80px;
+}
+
+.benefit {
+  border: 1px solid #ccc;
+  padding: 16px 16px 32px 16px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.benefit .icon {
+  color: rgb(198,161,207);
+  font-size: 64px;
+}
+
+.benefit h4 {
+  margin-bottom: 5px;
+}
+
+.benefit .text {
+  font-size: 24px;
+  color: #777;
+}
+
+/* New Arrivals */
+.h {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 5rem;
+  font-weight: 600;
+}
+
+.h h1 {
+  font-weight: 400;
+}
+
+.h span {
+  color: rgb(198,161,207);
+}
+
+.ac-center {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 80px;
+  margin-bottom: 80px;
+}
+
+.ac {
+  text-align: center;
+  padding-bottom: 16px;
+  transition: all 500ms ease-in-out;
+}
+
+.ac:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ac .img-cover {
+  overflow: hidden;
+}
+
+.ac img {
+  transition: all 500ms ease-in-out;
+}
+
+.ac:hover img {
+  transform: scale(1.2);
+}
+
+@media only screen and (max-width: 567px) {
+  .h {
+    font-size: 32px;
+  }
+}
+
+.ab {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(8, 4vw);
+  gap: 2rem;
+}
+
+.ab .item {
+  overflow: hidden;
+}
+
+.ab img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  transition: all 500ms ease-out;
+}
+
+.ab .item-1 img {
+  object-fit: fill;
+}
+
+.ab img:hover {
+  transform: scale(1.2);
+}
+
+.item-1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 9;
+}
+
+.item-2 {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 9;
+}
+.item-3 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+
+.item-4 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 9;
+}
+
+@media only screen and (max-width: 600px) {
+  .gallary {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(20, 4vw);
+  }
+
+  .item-1 {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 7;
+  }
+
+  .item-2 {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 7;
+    grid-row-end: 11;
+  }
+  .item-3 {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 11;
+    grid-row-end: 15;
+  }
+  .item-4 {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 15;
+    grid-row-end: 19;
+  }
+}
+    
+    /*footer*/
+    #footer {
+      
+        box-sizing: border-box;
+        font-family: 'Poppins',sans-serif;
+        position: relative;
+        min-height: 50vh;
+        padding: 50px 100px;
+        background-color: black;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+     }
+    
+     
+     #footer ul li{
+        color: white;
+        list-style:none;
+        margin: 30px 40px;
+        padding-top: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    #footer ul li a{
+        text-decoration: none;
+        color: white;
+        font-family: sans-serif;
+    }
+    
+    #footer ul li a:hover{
+        color: rgb(198,161,207);
+    } 
+    
+    
+    .social-links{
+        margin-left: 8%;
+        margin-top: 100px;
+    }
+    
+    .social-links a{
+        font-size: 30px;
+        color: #606163;
+        margin-right: 20px;
+    }
+    
+    .social-links a:hover{
+     color: rgb(198,161,207);
+    }
+   
+
+#footer .foot {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#footer ul li {
+    color: white;
+    list-style: none;
+    margin: 0 40px; 
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+}
+
+#footer ul li a:hover {
+    color: rgb(198,161,207);
+}
+
+.social-links a {
+    font-size: 30px;
+    color: #606163;
+}
+
+.social-links a:hover {
+    color: rgb(198,161,207);
+}
+
+  </style>
+</head>
+
+<body>
+
+
+ <header class="header">
+  <nav>
+    <img style="height: 200px; width: 200px;" src="https://img.freepik.com/premium-vector/letter-g-with-arrow-logo-design-simple-letter-g-logo-design-with-arrow-side-pointing-up_653838-120.jpg?w=740"  class="logob">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#new">New Arrivals</a></li>
+        <li><a href="#shop">Shop By Categories</a></li>
+        <li><a href="#popular">Popular Products</a></li>
+
+    </ul>
+    </nav>
+    <div class="intro">
+     <h1>TRY OUT THESE LEATHER PRODUCTS</h1>
+          <h2>
+            Up to</br>
+            <span class="dis">30% 
+              Discount</span></br>
+            on This <br />
+            <span class="dis">Spring Summer</span></br>
+           
+          </h2>
+          <h3>From 1st march to 31st may</h3>
+          <a href="#" class="btn">SHOP NOW</a>
+        </div>
+      
+  </header>
+
+  <section id="home" class="section benefits">
+    <div class="benefit-center box">
+      <div class="benefit">
+        <span class="icon"><i class="bx bx-purchase-tag"></i></span>
+        <h4>Free Shipping</h4>
+        <span class="text">Capped at $16 per order</span>
+      </div>
+
+     
+      <div class="benefit">
+        <span class="icon"><i class="bx bx-book-reader"></i></span>
+        <h4>10-Day Returns</h4>
+        <span class="text">Shop without any fear</span>
+      </div>
+
+      <div class="benefit">
+        <span class="icon"><i class="bx bx-headphone"></i></span>
+        <h4>24/7 Support</h4>
+        <span class="text">We are always there to help you</span>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="new" class="section">
+    <div class="h">
+      <h1><span>New</span> Arrivals</h1>
+    </div>
+    <div class="ac-center box">
+      <div class="ac">
+        <div class="img-cover">
+          <img src="https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1679651132/735132_FABLE_9442_003_100_0000_Light-Ophidia-GG-small-handbag.jpg" alt="" />
+        </div>
+        <p>OPHIDIA GG SMALL HANDBAG</p>
+        <div class="rating">
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+        </div>
+        <div class="price">1890$</div>
+      </div>
+
+      <div class="ac">
+        <div class="img-cover">
+          <img src="https://media.gucci.com/style/White_South_0_160_540x540/1669816971/725539_JAAC6_9742_002_100_0000_Light.jpg" alt="" />
+        </div>
+        <p>WOMEN'S SLIDE SANDAL WITH INTERLOCKING1</p>
+        <div class="rating">
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bx-star"></i>
+        </div>
+        <div class="price">620$</div>
+      </div>
+      <div class="ac">
+        <div class="img-cover">
+          <img src="https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1687275906/223512_J8400_8106_003_100_0000_Light-Trademark-necklace-with-heart-pendant.jpg" alt="" />
+        </div>
+        <p>TRADEMARK NECKLACE WITH HEART PENDANT</p>
+        <div class="rating">
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bx-star"></i>
+        </div>
+        <div class="price">280$</div>
+      </div>
+      <div class="ac">
+        <div class="img-cover">
+          <img src="https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1695830528/764349_XDCRA_4447_002_100_0000_Light-Denim-pant.jpg" alt="" />
+        </div>
+        <p>DENIM PANT</p>
+        <div class="rating">
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bx-star"></i>
+        </div>
+        <div class="price">1620$</div>
+      </div>
+
+      <div class="ac">
+        <div class="img-cover">
+          <img src="https://media.gucci.com/style/DarkGray_Center_0_0_800x800/1615810503/456116_17WAG_9096_001_100_0000_Light-GG-Marmont-continental-wallet.jpg" alt="" />
+        </div>
+        <p>GG MARMONT CONTINENTAL WALLET </p>
+        <div class="rating">
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bx-star"></i>
+        </div>
+        <div class="price">640$</div>
+      </div>
+      <div class="ac">
+        <div class="img-cover">
+          <img src="https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1679699724/406831_UKOEC_1000_003_100_0000_Light-GG-Marmont-belt-with-maxi-GG.jpg" alt="" />
+        </div>
+        <p>GG MARMONT BELT WITH MAXI GG</p>
+        <div class="rating">
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bx-star"></i>
+        </div>
+        <div class="price">490$</div>
+        
+      </div>
+    </div>
+  </section>
+
+
+  <section id="shop" class="section">
+    <div class="h">
+      <h1><span>Shop By</span> Categories</h1>
+    </div>
+    <div class="ab box">
+      <div class="item item-1">
+        <img src="https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1702370905/695735_XJECY_9185_002_100_0000_Light-GG-jersey-jacquard-dress.jpg" alt="" />
+      </div>
+      <div class="item item-2">
+        <img src="https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1678149019/632119_I8600_9812_003_100_0000_Light-G-Timeless-watch-29mm.jpg" alt="" />
+      </div>
+      <div class="item item-3">
+        <img src="https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1698687950/692909_UIQ20_1060_003_100_0000_Light-Mens-GG-Rhyton-sneaker.jpg" alt="" />
+      </div>
+      <div class="item item-4">
+        <img src="https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1694623658/764960_K9GSG_8367_003_100_0000_Light-Ophidia-mini-bag.jpg" alt="" />
+      </div>
+    </div>
+  </section>
+
+
+  <section id="popular" class="section">
+    <div class="h">
+      <h1>Popular <span>Products</span></h1>
+    </div>
+    <div class="ac-center box">
+      <div class="ac">
+        <div class="img-cover">
+          <img src="https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1583777703/447632_DTD1T_1000_005_100_0000_Light-GG-Marmont-small-shoulder-bag.jpg" alt="" />
+        </div>
+        <p>Luxuary Leather hand bag-black</p>
+        <div class="rating">
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bx-star"></i>
+        </div>
+        <div class="price">1790$</div>
+      </div>
+
+      <div class="ac">
+        <div class="img-cover">
+          <img src="https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1569420005/612138_H9020_8476_006_096_0000_Light-GG-thong-Web-sandal.jpg" alt="" />
+        </div>
+        <p>Covered leather sandal</p>
+        <div class="rating">
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bx-star"></i>
+        </div>
+        <div class="price">595$</div>
+      </div>
+
+      <div class="ac">
+        <div class="img-cover">
+          <img src="https://media.gucci.com/style/DarkGray_Center_0_0_800x800/1676310352/701420_K9GSG_9769_001_080_0000_Light-Wallet-with-cut-out-Interlocking-G.jpg" alt="" />
+        </div>
+        <p>Cute Wallet</p>
+        <div class="rating">
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bx-star"></i>
+        </div>
+        <div class="price">490$</div>
+      </div>
+      <div class="ac">
+        <div class="img-cover">
+          <img src="https://media.gucci.com/style/DarkGray_Center_0_0_800x800/1694502132/772793_AAC1Q_5236_001_080_0000_Light-GG-medium-wallet.jpg" alt="" />
+        </div>
+        <p>Ladies wallet-purple</p>
+        <div class="rating">
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bx-star"></i>
+        </div>
+        <div class="price">650$</div>
+      </div>
+      <div class="ac">
+        <div class="img-cover">
+          <img src="https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1695830528/764349_XDCRA_4447_002_100_0000_Light-Denim-pant.jpg" alt="" />
+        </div>
+        <p>DENIM PANT</p>
+        <div class="rating">
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bx-star"></i>
+        </div>
+        <div class="price">1620$</div>
+      </div>
+      <div class="ac">
+        <div class="img-cover">
+          <img src="https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1681405210/746030_BKO00_1000_003_100_0000_Light-Womens-Double-G-thong-sandal.jpg" alt="" />
+        </div>
+        <p>Black Sandals</p>
+        <div class="rating">
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bx-star"></i>
+        </div>
+        <div class="price">790$</div>
+      </div>
+      <div class="ac">
+        <div class="img-cover">
+          <img src="https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1603303212/652681_HUHHG_8565_004_100_0021_Light-Jackie-1961-chain-wallet.jpg" alt="" />
+        </div>
+        <p>Wallet-Ladies-2021</p>
+        <div class="rating">
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bx-star"></i>
+        </div>
+        <div class="price">1100$</div>
+      </div>
+      <div class="ac">
+        <div class="img-cover">
+          <img src="https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1700077824/777265_FAC2L_4642_003_100_0000_Light-GG-Marmont-small-shoulder-bag.jpg" alt="" />
+        </div>
+        <p>Handbag-Ladies-Pink</p>
+        <div class="rating">
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bx-star"></i>
+        </div>
+        <div class="price">3790$</div>
+      </div>
+      <div class="ac">
+        <div class="img-cover">
+          <img src="https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1700591483/773725_XJF8W_9088_002_100_0000_Light-Cotton-jersey-mini-skirt-with-Web.jpg" alt="" />
+        </div>
+        <p>COTTON JERSEY MINI SKIRT WITH WEB</p>
+        <div class="rating">
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bx-star"></i>
+        </div>
+        <div class="price">980$</div>
+      </div>
+    </div>
+  </section>
+
+        <section id="footer">
+            
+            <div class="foot">
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT US</a></li>
+                    <li><a href="">CONTACT US</a></li>
+        
+                </ul>
+
+                <div class="social-links">
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                    <a href=""><i class="fab fa-behance"></i></a>
+                    <a href=""><i class="fab fa-dribbble"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                  </div>
+            </div>
+        </section>
+      
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Signup Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200vh;
+            background-color: #f4f4f4;
+            background: url(https://img.freepik.com/free-vector/wave-gradient-background-colorful-vector-illustration_343694-1527.jpg?w=996&t=st=1708172843~exp=1708173443~hmac=e14d812b06046a8bfac2674a4f1d297f741a6f7f0bd6da27783a45de6ae63389);
+            background-size: cover;
+            background-position: center;
+        }
+    
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            margin-top: 150%;
+            animation: slideUp 1s ease-in-out;
+        }
+    
+        @keyframes slideUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        label {
+            margin-bottom: 8px;
+        }
+    
+        input {
+            padding: 8px;
+            margin-bottom: 16px;
+        }
+    
+        button {
+            padding: 10px;
+            background:linear-gradient(45deg,blueviolet,rgb(0, 33, 167));
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    
+        .signin-link {
+            margin-top: 10px;
+            text-align: center;
+        }
+    
+        .webmadewell {
+            background-color: white;
+        }
+    
+        .sample-header {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            background-image: url("https://img.freepik.com/free-photo/3d-illustration-smartphone-with-products-coming-out-screen-online-shopping-e-commerce-concept_58466-14529.jpg?w=996&t=st=1708170018~exp=1708170618~hmac=d7cdd1994f4d04316bd33085ada7e18111da42e5d70c7cbf202575e0b8e746c0");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            animation: backgroundAnimation 20s linear infinite alternate;
+        }
+    
+        .sample-header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: MidnightBlue;
+            opacity: 0.1;
+        }
+    
+        .sample-header-section {
+            position: relative;
+            padding: 15% 0 10%;
+            max-width: 640px;
+            margin-left: auto;
+            margin-right: auto;
+            color: white;
+            font-family: "Montserrat", sans-serif;
+        }
+    
+        h1 {
+            font-weight: 500;
+        }
+    
+        h2 {
+            font-weight: 400;
+        }
+    
+        #topnav {
+            width: 100%;
+            z-index: 5;
+            position: fixed;
+            top: 0;
+            left: 0;
+            color: rgb(0, 0, 0);
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+    
+        .nav-link {
+            display: inline-block;
+            width: 100px;
+            height: 55px;
+            color: rgb(66, 66, 66);
+            text-align: center;
+            line-height: 55px;
+            text-decoration: none;
+        }
+    
+        #logo {
+            width: 120px;
+            background-color: rgb(91, 66, 104, 0.5);
+            color: white;
+            font-weight: bold;
+        }
+    
+        #about {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    
+        .sample-header {
+            height: 80vh;
+            background-image: url("https://img.freepik.com/free-vector/shopping-time-banner-with-realistic-map-cart-gift-bags-vector-illustration_548887-120.jpg?w=1060&t=st=1708173431~exp=1708174031~hmac=d9107257a7f38637ba496896a92d4e9593cea8ec680fd568a7e076bfbc3811b7");
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <div class="sample-header">
+        <div class="sample-header-section">
+        
+         
+        </div>
+      </div>
+      
+    
+    <div  class="cont">
+        
+    <div  id="signup" class="container">
+        <h2>Signup</h2>
+        <form  action="/signup" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Signup</button>
+        </form>
+        
+        <p class="signin-link">Already have an account? <a href="signin.html">Sign in here</a></p>
+    </div>
+    </div>
+</body>
+</html>
