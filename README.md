@@ -1,6 +1,5 @@
 # Ecommerce-Full-Stack
 
-cat <<EOF > README.md
 # Project Name
 
 Short description or introduction of your project goes here.
@@ -85,7 +84,7 @@ Explain how others can contribute to your project. Include guidelines for pull r
 ## License
 
 Specify the license under which your project is distributed. For example, MIT License, Apache License 2.0, etc.
-EOF
+
 
 
 After Sign in :
