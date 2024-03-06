@@ -44,7 +44,7 @@ Provide instructions on how to install and set up your project locally. Include 
 1. Clone the repository:
 
 \`\`\`
-git clone https://github.com/your-username/your-repository.git
+https://github.com/LittleSmile05/Ecommerce-Full-Stack.git
 \`\`\`
 
 2. Install dependencies:
